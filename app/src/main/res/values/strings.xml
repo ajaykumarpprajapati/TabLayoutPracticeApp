@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TabLayoutPracticeApp</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recents">Recents</string>
+    <string name="heart">Heart</string>
+    <string name="near_by">NearBy</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
 </resources>
