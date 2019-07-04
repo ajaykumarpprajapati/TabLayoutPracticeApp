@@ -4,13 +4,13 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
+import android.support.v7.widget.CardView
 import android.support.v7.widget.Toolbar
 
 class CardViewActivity : AppCompatActivity() {
 
-    private var toolBar: Toolbar? = null
-    private var tabLayout: TabLayout? = null
-    private var viewPager: ViewPager? = null
+    private var cardViewOne: CardView? = null
+    private var cardViewTwo: CardView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +19,15 @@ class CardViewActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        cardViewOne = findViewById(R.id.card_view_1)
+        cardViewTwo = findViewById(R.id.card_view_2)
 
+        cardViewOne?.setOnClickListener {
+            //click listener for card view1
+        }
+
+        cardViewTwo?.setOnClickListener {
+            //click listener for card view2
+        }
     }
 }
