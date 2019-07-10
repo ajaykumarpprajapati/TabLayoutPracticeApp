@@ -1,15 +1,15 @@
 package india.ajay.tablayoutpracticeapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.view.ViewPager
-import android.support.v7.widget.CardView
+import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 
 class RecycleViewPracticeActivity : AppCompatActivity() {
 
     private var toolbar: Toolbar? = null
+    private var recyclerView: RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,5 +20,20 @@ class RecycleViewPracticeActivity : AppCompatActivity() {
     private fun setupView() {
         toolbar = findViewById(R.id.tool_bar)
         setSupportActionBar(toolbar)
+        recyclerView = findViewById(R.id.recycler_view)
+        val userList =  ArrayList<User>()
+        //need to add items in userList either from server or database
+
+
+        //Add items in userList in LinearLayout way
+        //val linearLayoutManager = LinearLayoutManager(this)
+        //recyclerView?.layoutManager = linearLayoutManager
+
+        //Add items in userList in GridLayout way
+        val gridLayoutManager = GridLayoutManager(this, 2)
+        recyclerView?.layoutManager = gridLayoutManager
+
+        recyclerView?.setHasFixedSize(true)
+        recyclerView?.adapter = RecycleAdapter(userList)
     }
 }

@@ -13,6 +13,8 @@
         <activity android:name=".CollapsingToolBarActivity"
                   android:label="Fruit"/>
         <activity android:name=".CardViewActivity"
+                  android:label="Fruit"/>
+        <activity android:name=".RecycleViewPracticeActivity"
                   android:label="Fruit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -20,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".RecycleViewPracticeActivity"/>
+        <activity android:name=".AppCompatSeelBarPRacActivity"/>
+        <!--<activity android:name=".RecycleViewPracticeActivity"/>-->
     </application>
 
 </manifest>

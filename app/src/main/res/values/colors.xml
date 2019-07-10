@@ -6,4 +6,5 @@
     <color name="colorTabTitle" tools:ignore="MissingDefaultResource">#FFFFFF</color>
     <color name="colorBackground">#F5F5F5</color>
     <color name="colorCardViewBackground">#FFFFFF</color>
+    <color name="colorSeekBar">#2196f3</color>
 </resources>
